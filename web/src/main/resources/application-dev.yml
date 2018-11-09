@@ -1,0 +1,20 @@
+# 开发环境
+server:
+  port: 8084
+  servlet:
+    context-path: /kim
+
+spring:
+
+  #  mysql数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kimsohyun?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: kim
+    password: kim
+
+  #  jpa参数配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
