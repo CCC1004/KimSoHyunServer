@@ -1,5 +1,6 @@
-package com.superC.kimsohyun.controller;
+package com.superc.kimsohyun.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,14 @@ public class WXLoginController {
     @RequestMapping(value = "/test")
     public String testZH(){
         return "工程整合成功！！！";
+    }
+
+    /**
+     * 微信登录
+     */
+    @PostMapping("/wxLogin")
+    public String wxLogin() {
+        return "ok123";
     }
 
 }
