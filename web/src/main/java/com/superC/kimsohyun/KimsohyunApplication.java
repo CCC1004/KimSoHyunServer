@@ -1,4 +1,4 @@
-package com.superC.kimsohyun;
+package com.superc.kimsohyun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

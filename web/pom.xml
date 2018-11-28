@@ -20,6 +20,12 @@
             <artifactId>service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!-- 添加model依赖 -->
+        <dependency>
+            <groupId>com.superC</groupId>
+            <artifactId>model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "wx",
+      "type": "com.superc.kimsohyun.properties.WxInfoProperties",
+      "sourceType": "com.superc.kimsohyun.properties.WxInfoProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

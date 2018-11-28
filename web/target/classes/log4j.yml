@@ -1,0 +1,29 @@
+log4j:
+  rootLogger: INFO,console,dailyFile
+  # TODO 发布到阿里云记得添加，另外控制台不输出(只输出warn或者error信息)
+  #INFO,console,dailyFile
+
+  logger:
+    org:
+      mybatis: INFO
+    com:
+      imooc:
+        mapper: INFO
+
+  appender:
+    console: org.apache.log4j.ConsoleAppender
+      encoding: UTF-8
+      layout: org.apache.log4j.PatternLayout
+        ConversionPattern: %-d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%l] - [%p] %m%n
+
+    # 定期滚动日志文件，每天都会生成日志
+    dailyFile: org.apache.log4j.DailyRollingFileAppender
+      encoding: UTF-8
+      Threshold: INFO
+      # TODO 本地日志地址，正式环境请务必切换为阿里云地址
+      File: E:/logs/kimServer/log.log4j
+      #File: /imooc/logs/log.log4j
+      DatePattern: '.'yyyy-MM-dd
+      layout: org.apache.log4j.PatternLayout
+        ConversionPattern: %-d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%l] - [%p] %m%n
+
